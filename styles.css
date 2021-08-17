@@ -34,7 +34,6 @@
   height: 80px;
   z-index: 1;
   width: 100%;
-  max-width: 1300px;
   margin: 0 auto; /* 0 for top/bottom, auto for left/right */
   padding: 0 50px;
 }
@@ -43,6 +42,7 @@
   background-color: #ff8177;
   background-image: linear-gradient(to top, #ff0844 0%, #ffb190 100%);
   background-size: 100%;
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -52,10 +52,6 @@
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
-}
-
-.fa-gem {
-  margin-right: 0.5rem;
 }
 
 .navbar__menu {
@@ -209,6 +205,7 @@
 /* Hero Section CSS */
 .main {
   background-color: #141414;
+  height: fit-content;
 }
 
 .main__container {
@@ -217,20 +214,21 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  height: 90vh;
+  height: auto;
   background-color: #141414;
   z-index: 1;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1440px;
   padding: 0 50px;
 }
 
 .main__content h1 {
   font-size: 4rem;
-  line-height: 1;
+  line-height: 1.2;
   background-color: #ff8177;
   background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
   background-size: 100%;
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -243,6 +241,7 @@
   background-color: #ff8177;
   background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
   background-size: 100%;
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -298,12 +297,27 @@
 }
 
 .main__img--container {
+  position: relative;
+  height: auto;
   text-align: center;
 }
 
 #main__img {
-  height: 75%;
-  width: 75%;
+  width: 90%;
+}
+
+/* in mobile */
+@media screen and (max-width: 768px) {
+  .main {
+    height: 800px;
+  }
+  .main__container {
+    grid-template-rows: 350px 400px;
+  }
+
+  #main__img {
+    width: 350px;
+  }
 }
 
 /* Mobile Responsive Main */
@@ -325,7 +339,6 @@
 
   .main__content h1 {
     font-size: 2.5rem;
-    margin-top: 2rem;
   }
 
   .main__content h2 {
@@ -361,11 +374,12 @@
 
 /* Services Section CSS */
 .services {
+  position: relative;
   background: #141414;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 90vh;
+  height: auto;
 }
 
 .services h1 {
@@ -380,7 +394,9 @@
   );
   background-size: 100%;
   margin-bottom: 5rem;
+  margin-top: 4rem;
   font-size: 2.5rem;
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -487,6 +503,48 @@
   }
 }
 
+/* education list CSS */
+.education {
+  padding-top: 5%;
+  background-color: #141414;
+  align-items: center;
+}
+
+.education__container {
+  margin: auto;
+  padding-bottom: 5rem;
+  background-color: #141414;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #ffff;
+  max-width: 1440px;
+}
+
+.education__content {
+  display: grid;
+  grid-template-columns: 20% 70%;
+  grid-row-gap: 25%;
+  color: #ffff;
+  justify-self: flex-start;
+  text-decoration: none;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  width: auto;
+  margin-left: 15%;
+  align-items:center;
+}
+
+.education__content h3 {
+  margin-left: 1rem;
+  text-align: left
+}
+
+#education__logo {
+  width: 5rem;
+  max-width: 95%;
+}
+
 /* Footer Section CSS */
 .footer__container {
   background-color: #141414;
@@ -502,7 +560,7 @@
   align-items: center;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .footer__links {
@@ -548,10 +606,22 @@ footer__link--items {
   transition: 0.3s ease-out;
 }
 
+#logo__img {
+  width: 8%;
+  margin-right: 1rem;
+  max-height: 95%;
+}
+
 /* Social Icons */
-.social__icon--link {
+.social__icons--link {
   color: #ffff;
-  font-size: 24px;
+  margin-right: 5px;
+}
+
+.social__icons--text {
+  color: #ffff;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
 .social__media {
@@ -569,10 +639,13 @@ footer__link--items {
 }
 
 .social__icons {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
   align-items: center;
   width: 240px;
+  color: #ffff;
+  text-align: left;
 }
 
 .social__logo {
