@@ -2,38 +2,41 @@
 <html lang="en">
 
 <head>
-  <!-- header -->
-  <meta charset="UTF-8" />
-  <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+  <!-- head -->
+  <meta charset="UTF-8">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
   <title>SEVERIN RICHNER</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="/images/logo.svg">
   <!-- for icons -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- script of header/footer -->
+  <script src="footer.js" type="text/javascript" defer></script>
 </head>
 
 <body>
   <!-- body -->
+  <!-- head / navigation bar -->
   <nav class="navbar">
     <div class="navbar__container">
-      <a href="/" id="navbar__logo"> <img id="logo__img" src="/images/logo.svg" alt="logo">SEVERIN RICHNER</a>
+      <a href="/" id="navbar__logo"> <img id="navbar__logo__img" src="/images/logo.svg" alt="logo">
+        <p id="logo__text">SEVERIN RICHNER</p>
+      </a>
       <div class="navbar__toggle" id="mobile-menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+        <span class="dot">
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </span>
       </div>
       <ul class="navbar__menu">
         <li class="navbar__item">
           <a href="/index.html" class="navbar__links">Main</a>
         </li>
         <li class="navbar__item">
-          <a href="/" class="navbar__links">Tech</a>
-        </li>
-        <li class="navbar__item">
           <a href="/about.html" class="navbar__links">About</a>
         </li>
         <li class="navbar__btn">
-          <a href="/" class="button">Sign up</a>
+          <a href="/" class="button">Contact</a>
         </li>
       </ul>
     </div>
@@ -43,20 +46,24 @@
   <div class="main">
     <div class="main__container">
       <div class="main__content">
-        <h1>NEXT GENERATION</h1>
-        <h2>TECHNOLOGY</h2>
-        <p>See what makes us different.</p>
-        <button class="main__btn"><a href="/">Get Started</a></button>
+        <h1>Severin Richner</h1>
+        <h2>Personal Website</h2>
+        <p>Simple, self-built website.</p>
+        <button class="main__btn"><a href="/">Contact</a></button>
       </div>
       <div class="main__img--container">
-        <img src="images/pic1.svg" alt="pic" id="main__img" />
+        <img src="images/lost-online.svg" alt="pic" id="main__img" />
       </div>
     </div>
   </div>
 
+  <div class="divider">
+    <img id="divider__img" src="/images/beige-purple.svg" alt="purple-blue">
+  </div>
+
   <!-- Services Section -->
   <div class="services">
-    <h1>See what the hype is about</h1>
+    <h1>See what projects I have worked on.</h1>
     <div class="services__container">
       <div class="services__card">
         <h2>Experiences Bliss</h2>
@@ -71,33 +78,14 @@
     </div>
   </div>
 
-  <!-- Footer Section -->
-  <!-- Footer Section -->
-  <div class="footer__container">
-    <div class="footer__links">
-      <div class="footer__link--wrapper">
-        <div class="social__media">
-          <div class="social__media--wrap">
-            <div class="footer__logo">
-              <a href="/" id="footer__logo"> <img id="logo__img" src="/images/logo.svg" alt="logo"> SEVERIN RICHNER </a>
-            </div>
-            <p class="website__rights">
-              SEVERIN RICHNER 2021. All rights reserved.
-            </p>
-            <div class="social__icons">
-              <a href="/" class="social__icons--link"><i class="material-icons">launch</i></a>
-              <a href="/" class="social__icons--text">LinkedIn</a>
-              <a href="https://github.com/severin-richner" class="social__icons--link"><i
-                  class="material-icons">code</i></a>
-              <a href="https://github.com/severin-richner" class="social__icons--text">Github</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="divider">
+    <img id="divider__img" src="/images/purple-blue.svg" alt="purple-blue">
   </div>
 
-  <!-- Scripts -->
+  <!-- include the footer -->
+  <footer-component></footer-component>
+
+  <!-- Script for navbar -->
   <script src="app.js"></script>
 </body>
 
