@@ -464,8 +464,6 @@
   grid-row-gap: 2rem;
   color: #ffff;
   text-decoration: none;
-  font-size: 1.5rem;
-  line-height: 2rem;
   width: auto;
   margin-left: 15%;
   align-items: center;
@@ -474,8 +472,16 @@
 }
 
 .education__content h3 {
+  font-size: 2rem;
   margin-left: 1rem;
+  margin-bottom: 1rem;
   text-align: left;
+}
+
+.education__content p {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 #education__logo {
@@ -491,13 +497,24 @@
 /* Education Section Responsive */
 @media only screen and (hover: none), screen and (max-width: 420px) {
   .education__content {
+    height: 60rem;
+  }
+
+  .education__content h3 {
     font-size: 2.5rem;
-    line-height: 3rem;
-    height: 45rem;
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+  
+  .education__content p {
+    font-size: 2.25rem;
+    margin-left: 2rem;
+    margin-bottom: 1.25rem;
   }
 
   #education__logo {
-    width: 7rem;
+    width: 10rem;
     max-width: 95%;
   }
   
@@ -677,6 +694,7 @@ footer__link--items {
 /* Contact Section Desktop*/
 
 .contact {
+  display: flex;
   background-color: #0e101b;
   height: fit-content;
   min-height: 80vh;
