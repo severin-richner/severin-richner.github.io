@@ -17,9 +17,9 @@ class Footer extends HTMLElement {
                         2021. All rights reserved.
                         </p>
                         <div class="social__icons">
-                           <a href="https://www.linkedin.com/in/severin-richner-265801219" class="social__icons--link"><i class="material-icons">launch</i></a>
+                           <a href="https://www.linkedin.com/in/severin-richner-265801219" class="social__icons--link"><img id="social__icon__img" src="/images/linkedin-logo.svg" alt="linkedin">
                            <a href="https://www.linkedin.com/in/severin-richner-265801219" class="social__icons--text">LinkedIn</a>
-                           <a href="https://github.com/severin-richner" class="social__icons--link"><i class="material-icons">code</i></a>
+                           <a href="https://github.com/severin-richner" class="social__icons--link"><img id="social__icon__img" src="/images/github-logo.svg" alt="github">
                            <a href="https://github.com/severin-richner" class="social__icons--text">Github</a>
                         </div>
                      </div>
