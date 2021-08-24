@@ -461,16 +461,15 @@
   align-items: center;
   color: #ffff;
   padding-top: 3%;
+  justify-content: center;
 }
 
 .education__content {
   display: grid;
-  grid-template-columns: 20% 70%;
+  grid-template-columns: 6rem 50rem;
   grid-row-gap: 2rem;
   color: #ffff;
   text-decoration: none;
-  width: auto;
-  margin-left: 15%;
   align-items: center;
   height: auto;
   margin-bottom: 1rem;
@@ -486,7 +485,6 @@
 .education__content p {
   font-size: 1.5rem;
   margin-left: 1rem;
-  margin-bottom: 1.5rem;
 }
 
 #education__logo {
@@ -503,6 +501,7 @@
 @media only screen and (hover: none), screen and (max-width: 420px) {
   .education__content {
     height: 60rem;
+    grid-template-columns: 11rem 35rem;
   }
 
   .education__content h3 {
