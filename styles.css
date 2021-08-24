@@ -493,8 +493,7 @@
 }
 
 .semester__info {
-  font-size: 1rem;
-  margin-left: 35%;
+  width: 56rem;
 }
 
 /* Education Section Responsive */
@@ -502,6 +501,10 @@
   .education__content {
     height: 60rem;
     grid-template-columns: 11rem 35rem;
+  }
+
+  .semester__info {
+    width: 36rem;
   }
 
   .education__content h3 {
@@ -787,6 +790,7 @@ ul {
 
 .tree { 
   margin: 1em;
+  margin-left: 3rem;
   font-size: 1.4rem;
 }
 
@@ -815,9 +819,13 @@ ul {
   padding: 0 0 1em 1em;
 }
 
-.tree ul li { padding: 1em 0 0 1em; }
+.tree ul li { 
+  padding: 1em 0 0 1em;
+}
 
-.tree > li:last-child { padding-bottom: 0; }
+.tree > li:last-child {
+  padding-bottom: 0;
+}
 
 /* ————————————————————–
   Tree labels
