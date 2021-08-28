@@ -20,7 +20,7 @@ class Footer extends HTMLElement {
                            <a href="https://www.linkedin.com/in/severin-richner-265801219" class="social__icons--link"><img id="social__icon__img" src="/images/linkedin-logo.svg" alt="linkedin">
                            <a href="https://www.linkedin.com/in/severin-richner-265801219" class="social__icons--text">LinkedIn</a>
                            <a href="https://github.com/severin-richner" class="social__icons--link"><img id="social__icon__img" src="/images/github-logo.svg" alt="github">
-                           <a href="https://github.com/severin-richner" class="social__icons--text">Github</a>
+                           <a href="https://github.com/severin-richner" class="social__icons--text">GitHub</a>
                         </div>
                      </div>
                   </div>
