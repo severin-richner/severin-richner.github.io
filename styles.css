@@ -405,6 +405,19 @@
   justify-content: center;
 }
 
+.main__githubcards {
+  display: grid;
+  row-gap: 2rem;
+  column-gap: 5rem;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 450px);
+  padding-bottom: 5rem;
+}
+
+#ghcard__img {
+  width: 100%;
+}
+
 .projects h1 {
   background-image: linear-gradient(
     to right,
@@ -437,6 +450,16 @@
     font-size: 3rem;
     margin-top: 5rem;
   }
+
+  .main__githubcards {
+    justify-content: center;
+    grid-template-columns: 100%;
+  }
+
+  #ghcard__img {
+    width: 80%;
+  }
+
 }
 
 /* education list CSS */
@@ -608,8 +631,6 @@ footer__link--items {
   width: 100%;
   overflow: hidden;
 }
-
-
 
 /* Social Icons */
 .social__icons--link {
