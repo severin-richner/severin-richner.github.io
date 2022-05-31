@@ -468,6 +468,7 @@
   width: 100%;
   background-color: #0e101b;
   align-items: center;
+  justify-content: center;
 }
 
 .education__container {
@@ -519,7 +520,7 @@
 /* Education Section Responsive */
 @media only screen and (hover: none), screen and (max-width: 420px) {
   .education__content {
-    height: 60rem;
+    height: 16rem;
     grid-template-columns: 11rem 35rem;
   }
 
@@ -810,11 +811,13 @@ ul {
   margin: 1em;
   margin-left: 3rem;
   font-size: 1.4rem;
+  padding-bottom: 4rem;
 }
 
 @media only screen and (hover: none), screen and (max-width: 420px) {
   .tree {
     font-size: 2.5rem;
+
   }
 }
 
