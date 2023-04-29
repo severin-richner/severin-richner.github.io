@@ -14,7 +14,7 @@ class Footer extends HTMLElement {
                            <a href="/" id="footer__logo"> <img id="footer__logo__img" src="/images/logo.svg" alt="logo"> SEVERIN RICHNER </a>
                         </div>
                         <p class="website__rights">
-                        2021. All rights reserved.
+                        2023. All rights reserved.
                         </p>
                         <div class="social__icons">
                            <a href="https://www.linkedin.com/in/severin-richner-265801219" class="social__icons--link"><img id="social__icon__img" src="/images/linkedin-logo.svg" alt="linkedin">
